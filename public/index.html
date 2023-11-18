@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <link rel="icon" href="Peluches_en_linea\oso-de-peluche.png" type="image/x-icon">
+    <title>Peluches en Linea</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo de la tienda -->
+                <img src="Peluches_en_linea\Logos\Captura de pantalla 2023-06-15 203513.png" alt="Logo de la tienda">
+            </div>
+            <div class="search-bar">
+                <!-- Barra de búsqueda -->
+                <input type="text" id="search" placeholder="Buscar...">
+                <button id="search-button">Buscar</button>      
+            </div>
+            <ul>
+                <!-- Menú de navegación -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://www.instagram.com/peluches_en_linea/" target="_blank">Redes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li id="cart-summary">
+                    <!-- Icono y contenido del carrito -->
+                    <a href="#" id="cart-icon">Carrito</a>
+                    <div id="cart-content" class="cart-content">
+                        <ul id="cart-list">
+                            <!-- Contenido del carrito se mostrará aquí -->
+                        </ul>
+                        <p id="cart-total"> <span id="total-value">0</span></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h3>
+            <!-- Imagen principal con texto alternativo -->
+            <img src="Peluches_en_linea/zyro-image(1).png" alt="Imagen 1">
+        </h3>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            
+            <div class="category-menu">
+                <!-- Menú de categorías -->
+                <select id="category-dropdown">
+                        <option value="all" checked> Todas las Categorías</option>
+                        <option value="letras"> Letras</option>
+                        <option value="bluey"> Bluey</option>
+                        <option value="cuphead"> Cuphead</option>
+                        <option value="demonSLayer"> Demon Slayer</option>
+                        <option value="gato"> Gato Palta</option>
+                        <option value="kitty"> Hello Kitty</option>
+                        <option value="bart"> Bart Simpson</option>
+                        <option value="mario"> Mario Bros</option>
+                        <option value="masha"> Masha y el Oso</option>
+                        <option value="mickey"> Minnie & Mickey</option>
+                        <option value="osos"> Oso Panda</option>
+                        <option value="pantera"> Pantera Rosa</option>
+                        <option value="payaso"> Payaso Pinplin</option>
+                        <option value="pochita"> Chainsaw Man</option>
+
+                        <!-- Agregado el resto de las categorías del servidor según sea necesario -->
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <section class="grid" id="cardContainer">
+            <!-- Contenedor de la sección de productos -->
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="copyright">
+            <div class="contact-info">
+                <!-- Información de contacto -->
+                <p>Correo: peluchesenlinea@gmail.com</p>
+                <p>Telefono Contacto: 9 5521 4929</p>
+                <p>Dirección: ---- </p>
+            </div>
+            &copy; 2023 Tu Empresa - Todos los derechos reservados
+        </div>
+    </footer>
+    <!-- Enlaces a bibliotecas externas y script principal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>
